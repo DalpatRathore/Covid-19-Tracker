@@ -1,0 +1,88 @@
+.infoBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  cursor: pointer;
+  text-align: center;
+  background: #c4c4c4;
+  -webkit-box-shadow: 0 0 2px #000;
+          box-shadow: 0 0 2px #000;
+  border-radius: 5px;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+
+.infoBox:nth-child(2) {
+  margin: 0 10px;
+}
+
+.infoBox__title {
+  color: #0c253b;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.infoBox__total {
+  color: #0c253b;
+  font-weight: 550;
+  font-size: 0.95rem;
+}
+
+.infoBox__cases {
+  color: #640d1d;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.infoBox__cases--recovered {
+  color: #236b23;
+}
+
+.infoBox__cases--deaths {
+  color: red;
+}
+
+.infoBox__selected {
+  border-top: 10px solid #0c253b;
+}
+
+@media screen and (min-width: 1024px) {
+  .infoBox {
+    border-radius: 5px;
+    padding: 15px;
+  }
+  .infoBox:nth-child(2) {
+    margin: 0 15px;
+  }
+  .infoBox__title {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+  .infoBox__total {
+    font-weight: 550;
+    font-size: 1.75rem;
+  }
+  .infoBox__cases {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin: 8px 0;
+  }
+  .infoBox__selected {
+    border-top: 10px solid #0c253b;
+  }
+}
+/*# sourceMappingURL=InfoBox.css.map */

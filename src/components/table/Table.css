@@ -1,0 +1,43 @@
+.table {
+  overflow-y: scroll;
+  height: calc(100vh);
+  color: #6a5d5d;
+}
+
+.table thead tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 40px 10px 10px;
+  background: #0c253b;
+  color: #ddd;
+}
+
+.table tbody {
+  color: #ddd;
+}
+
+.table tbody:nth-child(even) {
+  background: #450e53;
+}
+
+.table tbody:nth-child(odd) {
+  background: #102464;
+}
+
+.table tbody tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table td {
+  padding: 10px;
+}
+/*# sourceMappingURL=Table.css.map */

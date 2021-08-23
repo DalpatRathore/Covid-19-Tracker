@@ -1,0 +1,93 @@
+.world {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  gap: 5px;
+  margin: 0 auto;
+  width: 95vw;
+  max-width: var(--maxWidth);
+}
+
+.world__leftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.world__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.world__graph {
+  background: #c4c4c4;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px;
+          box-shadow: 0 0 2px;
+}
+
+.world__graphTitle {
+  margin: 20px 0;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.world__rightContainer {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .world {
+    padding: 20px;
+    gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .world__leftContainer {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+  }
+  .world__stats {
+    margin-bottom: 15px;
+  }
+  .world__rightContainer {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+}
+/*# sourceMappingURL=World.css.map */

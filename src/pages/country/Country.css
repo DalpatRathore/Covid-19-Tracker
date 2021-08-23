@@ -1,0 +1,92 @@
+.country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  margin: 0 auto;
+  width: 95vw;
+  max-width: var(--maxWidth);
+}
+
+.country__leftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.country__dropdown {
+  margin-bottom: 15px !important;
+}
+
+.country__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.country__graph {
+  background: #c4c4c4;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 2px;
+          box-shadow: 0 0 2px;
+}
+
+.country__graphTitle {
+  margin: 20px 0;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.country__rightContainer {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .country {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .country__leftContainer {
+    -webkit-box-flex: 0.7;
+        -ms-flex: 0.7;
+            flex: 0.7;
+  }
+  .country__rightContainer {
+    -webkit-box-flex: 0.3;
+        -ms-flex: 0.3;
+            flex: 0.3;
+  }
+}
+/*# sourceMappingURL=Country.css.map */

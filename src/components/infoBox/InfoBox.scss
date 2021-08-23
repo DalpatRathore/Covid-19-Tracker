@@ -1,0 +1,69 @@
+.infoBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  text-align: center;
+  background: #c4c4c4;
+  box-shadow: 0 0 2px #000;
+  border-radius: 5px;
+  padding: 5px;
+  letter-spacing: 1px;
+  &:nth-child(2) {
+    margin: 0 10px;
+  }
+  &__title {
+    color: #0c253b;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+  &__total {
+    color: #0c253b;
+    font-weight: 550;
+    font-size: 0.95rem;
+  }
+  &__cases {
+    color: #640d1d;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  &__cases--recovered {
+    color: rgb(35, 107, 35);
+  }
+  &__cases--deaths {
+    color: red;
+  }
+  &__selected {
+    border-top: 10px solid #0c253b;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .infoBox {
+    border-radius: 5px;
+    padding: 15px;
+
+    &:nth-child(2) {
+      margin: 0 15px;
+    }
+    &__title {
+      font-weight: 800;
+      font-size: 2rem;
+    }
+    &__total {
+      font-weight: 550;
+      font-size: 1.75rem;
+    }
+    &__cases {
+      font-weight: 600;
+      font-size: 1.75rem;
+      margin: 8px 0;
+    }
+    &__selected {
+      border-top: 10px solid #0c253b;
+    }
+  }
+}

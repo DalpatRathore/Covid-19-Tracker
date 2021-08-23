@@ -1,10 +1,10 @@
 .map {
-  height: 500px;
-  background: #fff;
-  padding: 1rem;
-  border-radius: 1.125rem;
-  margin: 1rem 0;
-  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  height: 600px;
+  background: #031d2e;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
 }
 
 .map .leaflet-container {
@@ -39,3 +39,4 @@
   font-size: 1rem;
   margin: 5px;
 }
+/*# sourceMappingURL=Map.css.map */

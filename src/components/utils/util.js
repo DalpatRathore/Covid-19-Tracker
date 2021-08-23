@@ -21,17 +21,6 @@ const casesTypeColors = {
     multiplier: 2000,
   },
 };
-// export const sortData = data => {
-//   const sortedData = [...data];
-//   sortedData.sort((a, b) => {
-//     if (a.cases > b.cases) {
-//       return -1;
-//     } else {
-//       return 1;
-//     }
-//   });
-//   return sortedData;
-// };
 
 export const sortData = data => {
   const sortedData = [...data];
@@ -42,8 +31,9 @@ export const prettyPrintStat = stat =>
   stat ? `+${numeral(stat).format("0.0a")}` : "+0";
 
 export const showDataOnMap = (data, casesType) =>
-  data.map(country => (
+  data.map((country, index) => (
     <Circle
+      key={index}
       center={[country.countryInfo.lat, country.countryInfo.long]}
       fillOpacity={0.4}
       pathOptions={{

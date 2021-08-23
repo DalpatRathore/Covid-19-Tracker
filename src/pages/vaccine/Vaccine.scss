@@ -1,0 +1,52 @@
+.vaccine {
+  padding: 10px;
+  margin: 0 auto;
+  width: 95vw;
+  max-width: var(--maxWidth);
+  &__row {
+    background: transparent;
+    margin: 10px auto;
+    padding: 5px 8px;
+    max-width: 750px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 3px #000;
+    &:nth-child(odd) {
+      background: #fff;
+    }
+    &:nth-child(even) {
+      background: #c4c4c4;
+    }
+    & h2 {
+      letter-spacing: 2px;
+      color: rgb(3, 29, 46);
+      padding: 2px;
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background: rgb(3, 29, 46);
+      box-shadow: 0 0 1px #000;
+      & h2 {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .vaccine {
+    padding: 20px;
+    &__row {
+      margin: 10px auto;
+      padding: 5px 10px;
+      & h2 {
+        letter-spacing: 2px;
+        padding: 5px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

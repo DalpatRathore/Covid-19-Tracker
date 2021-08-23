@@ -1,0 +1,66 @@
+.vaccine {
+  padding: 10px;
+  margin: 0 auto;
+  width: 95vw;
+  max-width: var(--maxWidth);
+}
+
+.vaccine__row {
+  background: transparent;
+  margin: 10px auto;
+  padding: 5px 8px;
+  max-width: 750px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 0 3px #000;
+          box-shadow: 0 0 3px #000;
+}
+
+.vaccine__row:nth-child(odd) {
+  background: #fff;
+}
+
+.vaccine__row:nth-child(even) {
+  background: #c4c4c4;
+}
+
+.vaccine__row h2 {
+  letter-spacing: 2px;
+  color: #031d2e;
+  padding: 2px;
+  font-size: 1rem;
+}
+
+.vaccine__row:hover {
+  background: #031d2e;
+  -webkit-box-shadow: 0 0 1px #000;
+          box-shadow: 0 0 1px #000;
+}
+
+.vaccine__row:hover h2 {
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .vaccine {
+    padding: 20px;
+  }
+  .vaccine__row {
+    margin: 10px auto;
+    padding: 5px 10px;
+  }
+  .vaccine__row h2 {
+    letter-spacing: 2px;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=Vaccine.css.map */

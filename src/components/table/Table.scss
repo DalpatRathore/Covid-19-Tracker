@@ -1,0 +1,28 @@
+.table {
+  overflow-y: scroll;
+  height: calc(100vh);
+  color: #6a5d5d;
+  & thead tr {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px 10px 10px;
+    background: #0c253b;
+    color: #ddd;
+  }
+  & tbody {
+    color: #ddd;
+    &:nth-child(even) {
+      background: rgb(69, 14, 83);
+    }
+    &:nth-child(odd) {
+      background: rgb(16, 36, 100);
+    }
+  }
+  & tbody tr {
+    display: flex;
+    justify-content: space-between;
+  }
+  & td {
+    padding: 10px;
+  }
+}
