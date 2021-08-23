@@ -18,4 +18,4 @@ Developed Covid-19-Tracker following the tutorial of the Clever Programmer Youtu
 
 ### `Screenshot-2`
 
-## ![screenshot-2](https://github.com/DalpatRathore/Covid-19-Tracker/blob/main/screenshots/screenshot-1.jpg)
+## ![screenshot-2](https://github.com/DalpatRathore/Covid-19-Tracker/blob/main/screenshots/screenshot-2.jpg)
