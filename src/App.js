@@ -6,10 +6,12 @@ import Country from "./pages/country/Country";
 import Vaccine from "./pages/vaccine/Vaccine";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import ScrollToTop from "./components/scrolltotop/ScrollToTop";
 
 function App() {
   return (
     <div>
+      <ScrollToTop></ScrollToTop>
       <Header></Header>
       <Switch>
         <Route exact path="/">

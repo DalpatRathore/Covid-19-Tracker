@@ -8,6 +8,11 @@
   margin: 0 auto;
   width: 95vw;
   max-width: var(--maxWidth);
+  min-height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+  & h3 {
+    text-align: center;
+    letter-spacing: 2px;
+  }
   &__leftContainer {
     display: flex;
     align-items: stretch;
@@ -17,27 +22,76 @@
   }
   &__dropdown {
     margin-bottom: 15px !important;
+    box-shadow: 0 0 2px #111;
+    border-radius: 5px;
   }
 
   &__stats {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    background: #fff;
+    padding: 5px 10px;
+    box-shadow: inset 2px 2px 5px #000, inset -3px -3px 10px #ddd;
   }
-  &__graph {
-    background: #c4c4c4;
+  &__stat {
+    background: rgb(10, 37, 95);
+    padding: 5px;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    font-size: 1rem;
     border-radius: 5px;
-    box-shadow: 0 0 2px;
-    // display: none;
+    display: flex;
+    flex-direction: column;
+    & .labelStatic {
+      display: inline-block;
+      background: #666;
+      padding: 3px 8px;
+      color: #eee;
+      border-radius: 5px 5px 0 0;
+    }
+    & .labelDynamic {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 3px 8px;
+      color: #ddd;
+      border-radius: 0 0 5px 5px;
+    }
   }
-  &__graphTitle {
-    margin: 20px 0;
-    text-align: center;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-  }
+
   &__rightContainer {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .country {
+    &__stats {
+      background: #fff;
+      padding: 5px 10px;
+      box-shadow: inset 2px 2px 5px #000, inset -3px -3px 10px #ddd;
+    }
+    &__stat {
+      background: rgb(10, 37, 95);
+      background: linear-gradient(45deg, rgb(6, 22, 66), transparent);
+      flex-direction: row;
+      padding: 5px;
+      margin: 10px 0;
+      letter-spacing: 2px;
+      font-size: 1rem;
+      border-radius: 5px;
+      & .labelStatic {
+        display: inline-block;
+        background: #666;
+        padding: 3px 8px;
+        color: #eee;
+        border-radius: 5px 0 0 5px;
+      }
+      & .labelDynamic {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 3px 8px;
+        color: #ddd;
+        border-radius: 0 5px 5px 0;
+      }
+    }
   }
 }
 
@@ -45,8 +99,29 @@
   .country {
     align-items: flex-start;
     flex-direction: row;
+    justify-content: center;
     &__leftContainer {
       flex: 0.7;
+    }
+    &__stats {
+      background: #fff;
+      padding: 5px 10px;
+      box-shadow: inset 2px 2px 5px #000, inset -3px -3px 10px #ddd;
+    }
+    &__stat {
+      padding: 5px;
+      margin: 10px 0;
+      letter-spacing: 2px;
+      font-size: 1.25rem;
+      border-radius: 5px;
+      & .labelStatic {
+        padding: 5px 10px;
+        border-radius: 5px 0 0 5px;
+      }
+      & .labelDynamic {
+        padding: 5px 10px;
+        border-radius: 0 5px 5px 0;
+      }
     }
     &__rightContainer {
       flex: 0.3;

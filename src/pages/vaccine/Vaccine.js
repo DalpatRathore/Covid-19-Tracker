@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./Vaccine.css";
 import numeral from "numeral";
+import Loader from "../../components/loader/Loader";
 
 const Vaccine = () => {
   const [vaccineInfo, setVaccineInfo] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch(
@@ -12,8 +15,26 @@ const Vaccine = () => {
       .then(response => response.json())
       .then(data => {
         setVaccineInfo(data);
+        setLoading(false);
+        setError(false);
+      })
+      .catch(error => {
+        console.log(error);
+        setError(true);
+        setLoading(false);
       });
   }, []);
+
+  if (loading) {
+    return <Loader></Loader>;
+  }
+  if (error) {
+    return (
+      <div className="vaccine">
+        <h3>Sorry! Something went wrong.</h3>
+      </div>
+    );
+  }
 
   return (
     <div className="vaccine">

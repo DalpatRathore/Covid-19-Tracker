@@ -11,11 +11,11 @@ function Table({ countries }) {
             <th>Cases</th>
           </tr>
         </thead>
-        {countries.map((nation, index) => {
-          const { country, cases } = nation;
-          return (
-            <tbody key={index}>
-              <tr>
+        <tbody>
+          {countries.map((nation, index) => {
+            const { country, cases } = nation;
+            return (
+              <tr key={index}>
                 <td>
                   {index + 1}. {country}
                 </td>
@@ -23,9 +23,9 @@ function Table({ countries }) {
                   <strong>{numeral(cases).format(",")}</strong>
                 </td>
               </tr>
-            </tbody>
-          );
-        })}
+            );
+          })}
+        </tbody>
       </table>
     </div>
   );

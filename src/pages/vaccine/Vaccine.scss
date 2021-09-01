@@ -1,8 +1,13 @@
 .vaccine {
   padding: 10px;
   margin: 0 auto;
+  min-height: calc(100vh - var(--headerHeight) - var(--footerHeight));
   width: 95vw;
   max-width: var(--maxWidth);
+  & h3 {
+    text-align: center;
+    letter-spacing: 2px;
+  }
   &__row {
     background: transparent;
     margin: 10px auto;

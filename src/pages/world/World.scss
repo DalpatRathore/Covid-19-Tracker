@@ -8,6 +8,11 @@
   margin: 0 auto;
   width: 95vw;
   max-width: var(--maxWidth);
+  min-height: calc(100vh - var(--headerHeight) - var(--footerHeight));
+  & h3 {
+    text-align: center;
+    letter-spacing: 2px;
+  }
   &__leftContainer {
     display: flex;
     align-items: stretch;
@@ -43,6 +48,8 @@
     gap: 20px;
     align-items: flex-start;
     flex-direction: row;
+    justify-content: center;
+
     &__leftContainer {
       flex: 0.6;
     }

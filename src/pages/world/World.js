@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./World.css";
-
 import InfoBox from "../../components/infoBox/InfoBox";
 import Map from "../../components/map/Map";
-
-import { prettyPrintStat, sortData } from "../../components/utils/util";
+import { prettyPrintStat } from "../../components/utils/util";
 import LineGraph from "../../components/lineGraph/LineGraph";
 import "leaflet/dist/leaflet.css";
+import Loader from "../../components/loader/Loader";
 
 const World = () => {
   const [countries, setCountries] = useState([]);
   const [country, setCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
-  const [tableData, setTableData] = useState([]);
+
   const [mapZoom, setMapZoom] = useState(3);
   const [mapCenter, setMapCenter] = useState({
     lat: 34.80746,
@@ -20,12 +19,21 @@ const World = () => {
   });
   const [mapCountries, setMapCountries] = useState([]);
   const [casesType, setCasesType] = useState("cases");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch("https://disease.sh/v3/covid-19/all")
       .then(response => response.json())
       .then(data => {
         setCountryInfo(data);
+        setLoading(false);
+        setError(false);
+      })
+      .catch(error => {
+        console.log(error);
+        setError(true);
+        setLoading(false);
       });
   }, []);
 
@@ -38,8 +46,7 @@ const World = () => {
             name: country.country,
             value: country.countryInfo.iso2,
           }));
-          const sortedData = sortData(data);
-          setTableData(sortedData);
+
           setMapCountries(data);
           setCountries(countries);
         });
@@ -62,6 +69,16 @@ const World = () => {
         setMapZoom(4);
       });
   };
+  if (loading) {
+    return <Loader></Loader>;
+  }
+  if (error) {
+    return (
+      <div className="world">
+        <h3>Sorry! Something went wrong.</h3>
+      </div>
+    );
+  }
 
   return (
     <div className="world">

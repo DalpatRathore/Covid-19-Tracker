@@ -16,25 +16,23 @@
   color: #ddd;
 }
 
-.table tbody {
-  color: #ddd;
-}
-
-.table tbody:nth-child(even) {
-  background: #450e53;
-}
-
-.table tbody:nth-child(odd) {
-  background: #102464;
-}
-
 .table tbody tr {
+  color: #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 2px 0;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #450e53;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #102464;
 }
 
 .table td {

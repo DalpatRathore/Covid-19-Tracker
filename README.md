@@ -1,14 +1,16 @@
 # Covid-19-Tracker
 
-#### Live Demo: [https://covid19-track-1.web.app](https://covid19-track-1.web.app)
+#### Live Demo: [Covid-19-Tracker](https://covid19-track-1.web.app)
 
 ## Description
 
-Developed Covid-19-Tracker following the tutorial of the Clever Programmer Youtube channel.
+Developed and deployed Covid-19-Tracker following tutorial of the Clever Programmer Youtube channel.
 
-## Source of learning and tutorial link:
+## Source of Learning & Tutorial Link :
 
-#### Clever Programmer: [Youtube Tutorial](https://youtu.be/cF3pIMJUZxM?list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
+#### Youtube Tutorial: [Clever Programmer](https://youtu.be/cF3pIMJUZxM?list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP)
+
+#### API Link: [https://www.disease.sh](https://www.disease.sh/)
 
 ## Covid-19-Tracker Screenshots :-
 

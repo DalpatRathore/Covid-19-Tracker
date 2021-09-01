@@ -2,6 +2,7 @@
   overflow-y: scroll;
   height: calc(100vh);
   color: #6a5d5d;
+
   & thead tr {
     display: flex;
     justify-content: space-between;
@@ -9,8 +10,11 @@
     background: #0c253b;
     color: #ddd;
   }
-  & tbody {
+  & tbody tr {
     color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0;
     &:nth-child(even) {
       background: rgb(69, 14, 83);
     }
@@ -18,10 +22,7 @@
       background: rgb(16, 36, 100);
     }
   }
-  & tbody tr {
-    display: flex;
-    justify-content: space-between;
-  }
+
   & td {
     padding: 10px;
   }
