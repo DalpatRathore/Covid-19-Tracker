@@ -16,8 +16,8 @@ Developed and deployed Covid-19-Tracker following tutorial of the Clever Program
 
 ### `Screenshot-1`
 
-## ![screenshot-1](https://github.com/DalpatRathore/Covid-19-Tracker/blob/main/screenshots/screenshot-1.jpg)
+## ![screenshot-1](https://github.com/DalpatRathore/Covid-19-Tracker/blob/main/screenshots/screenshot-01.jpg)
 
 ### `Screenshot-2`
 
-## ![screenshot-2](https://github.com/DalpatRathore/Covid-19-Tracker/blob/main/screenshots/screenshot-2.jpg)
+## ![screenshot-2](https://github.com/DalpatRathore/Covid-19-Tracker/blob/main/screenshots/screenshot-02.jpg)
