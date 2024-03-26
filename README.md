@@ -2,7 +2,7 @@
 # <img align="center" alt="" width="300" src="https://github.com/DalpatRathore/covid-19-tracker/blob/main//src/components/header/covid-19-1.png">
 
 
-#### Live Demo: [Covid-19-Tracker](https://covid19tracks.web.app/)
+
 
 ## Description
 
